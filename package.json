@@ -1,0 +1,36 @@
+{
+  "name": "martini",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "start:build": "webpack --watch --mode=development",
+    "start:server": "JWT=shh nodemon server/index.js --ignore src/ --ignore dist/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "pg": "^8.11.0",
+    "sequelize": "^6.31.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.1",
+    "@babel/preset-react": "^7.22.3",
+    "@reduxjs/toolkit": "^1.9.5",
+    "axios": "^1.4.0",
+    "babel-loader": "^9.1.2",
+    "nodemon": "^2.0.22",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "^8.0.7",
+    "react-router-dom": "^6.11.2",
+    "redux-logger": "^3.0.6",
+    "webpack": "^5.85.0",
+    "webpack-cli": "^5.1.1"
+  }
+}
